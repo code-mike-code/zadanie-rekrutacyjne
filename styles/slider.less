@@ -1,0 +1,32 @@
+.slider {
+  &__wrapper {
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    position: relative;
+  }
+  &__slide {
+    position: relative;
+    img { 
+      width: 100%; 
+      height: 400px; 
+      object-fit: cover; }
+  }
+  &__caption {
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.35);
+    color: #fff;
+    padding: 2rem;
+    h2 { 
+      font-size: 2.2rem; 
+      font-weight: 700; 
+    }
+    p { 
+      font-size: 1.1rem; 
+    }
+    a.btn { 
+      margin-top: 1rem; 
+    }
+  }
+}
