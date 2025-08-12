@@ -57,6 +57,151 @@
 
 <body>
 
+    <header class="header">
+        <div class="header__top bg-primary text-white py-1">
+            <div class="container d-flex justify-content-center align-items-center">
+                <div class="header__links d-flex align-items-center justify-content-center">
+                    <div class="header__contact">
+                        <i class="fa fa-phone"></i> (+48) 000 000 000
+                    </div>
+                    <a
+                        href="#"
+                        class="header__link text-white"
+                    ><i class="fa fa-envelope"></i> Napisz do nas!</a>
+                    <a
+                        href="#"
+                        class="header__link text-white"
+                    ><i class="fa fa-truck"></i> Darmowa dostawa</a>
+                    <a
+                        href="#"
+                        class="header__link text-white"
+                    ><i class="fa fa-undo"></i> 30 Dni na darmowy zwrot</a>
+                </div>
+            </div>
+        </div>
+        <div class="header__main py-3">
+            <div class="container">
+                <div class="d-flex align-items-center w-100">
+                    <div class="col">
+                        <a
+                            href="#"
+                            class="header__logo"
+                        >
+                            <img
+                                src="assets/img_logo.svg"
+                                alt="unlimitech logo"
+                            />
+                        </a>
+                    </div>
+                    <nav class="header__nav flex-grow-1 d-none d-md-flex align-items-center justify-content-center">
+                        <div class="dropdown">
+                            <a
+                                href="#"
+                                class="dropdown-toggle"
+                                data-bs-toggle="dropdown"
+                            >Damskie buty skórzane</a>
+                            <ul class="dropdown-menu">
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Półbuty</a></li>
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Jazzówki</a></li>
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Czółenka</a></li>
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Baleriny</a></li>
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Sandały</a></li>
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Klapki</a></li>
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Botki</a></li>
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Kozaki</a></li>
+                                <li><a
+                                        class="dropdown-item"
+                                        href="#"
+                                    >Outlet</a></li>
+                            </ul>
+                        </div>
+                        <a href="#">Bony podarunkowe</a>
+                        <a href="#">Nowości</a>
+                        <a href="#">Bestsellery</a>
+                        <a
+                            href="#"
+                            class="text-danger"
+                        >Wyprzedaż</a>
+                    </nav>
+                    <form class="header__search d-none d-md-flex position-relative ms-3">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Wyszukaj"
+                        />
+                        <button
+                            type="submit"
+                            class="btn p-0"
+                        ><i class="fa fa-search"></i></button>
+                    </form>
+                    <div class="header__actions d-flex align-items-center ms-3 gap-2">
+                        <a
+                            href="#"
+                            class="header__icon"
+                        ><i class="fa fa-user"></i></a>
+                        <a
+                            href="#"
+                            class="header__icon"
+                        ><i class="fa fa-heart"></i></a>
+                        <a
+                            href="#"
+                            class="header__icon header__icon--cart position-relative"
+                        >
+                            <i class="fa fa-shopping-bag"></i>
+                            <span class="header__icon-dot"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile search bar -->
+
+        <div class="header__searchbar d-md-none py-2">
+            <div class="container">
+                <form class="header__searchbar-form d-flex align-items-center position-relative">
+                    <input
+                        type="text"
+                        class="form-control rounded-pill ps-4 pe-5"
+                        placeholder="Wyszukaj"
+                    />
+                    <button
+                        type="submit"
+                        class="btn position-absolute end-0 top-50 translate-middle-y me-2 p-0"
+                        style="background:transparent; border:none;"
+                    >
+                        <i class="fa fa-search"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
