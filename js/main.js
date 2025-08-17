@@ -24,6 +24,32 @@
     `);
   });
 
+// Slick slider 
+
+  $('.slider__wrapper').slick({
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 500,
+        fade: true,
+        cssEase: 'linear',
+        autoplay: true,
+        autoplaySpeed: 3000,
+        pauseOnHover: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    arrows: false,
+                }
+            }
+        ],
+        prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></button>',
+        nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>'
+    });
+
  // Otwieranie podglądu koszyka
   $(document).off('click', '.header__icon--cart').on('click', '.header__icon--cart', function(e) {
     e.preventDefault();
