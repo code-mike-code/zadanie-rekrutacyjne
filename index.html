@@ -156,9 +156,9 @@
                         <button
                             type="submit"
                             class="btn p-0"
-                        ><i class="fa fa-search"></i></button>
+                        ><i class="fa-solid fa-search"></i></button>
                     </form>
-                    <div class="header__actions d-flex align-items-center ms-3 gap-2">
+                    <div class="header__actions d-flex align-items-center ms-0 gap-2">
                         <a
                             href="#"
                             class="header__icon"
@@ -174,10 +174,32 @@
                             <i class="fa fa-shopping-bag"></i>
                             <span class="header__icon-dot"></span>
                         </a>
+                        <a
+                            href="#"
+                            class="header__icon header__icon--bars position-relative d-md-none"
+                        >
+                            <i class="fa-solid fa-bars"></i>
+                        </a>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Mobile Menu -->
+
+        <div class="mobile-menu-overlay"></div>
+        <aside class="mobile-menu">
+            <div class="mobile-menu__header">
+                <h5 class="mobile-menu__title">Menu</h5>
+                <button
+                    class="mobile-menu__close"
+                    aria-label="Zamknij menu"
+                >&times;</button>
+            </div>
+            <div class="mobile-menu__body">
+
+            </div>
+        </aside>
 
         <!-- Mobile search bar -->
 
@@ -194,7 +216,7 @@
                         class="btn position-absolute end-0 top-50 translate-middle-y me-2 p-0"
                         style="background:transparent; border:none;"
                     >
-                        <i class="fa fa-search"></i>
+                        <i class="fa-solid fa-search"></i>
                     </button>
                 </form>
             </div>
