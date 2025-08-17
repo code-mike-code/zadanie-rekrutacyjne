@@ -16,15 +16,16 @@
       object-fit: cover;
       display: block;
       transition: transform 0.2s;
+      filter: brightness(0.7);
     }
     &-name {
       position: absolute;
-      left: 0; right: 0; bottom: 0;
-      background: rgba(0,0,0,0.45);
+      top: 50%;
+      left: 50%; 
+      transform: translate(-50%, -50%);
       color: #fff;
-      font-size: 1.2rem;
+      font-size: 1.6rem;
       font-weight: 600;
-      padding: 0.7rem 1rem;
       text-align: center;
       letter-spacing: 0.5px;
     }
