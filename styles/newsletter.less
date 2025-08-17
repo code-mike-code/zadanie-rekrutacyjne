@@ -1,23 +1,54 @@
 .newsletter {
+  padding: 0;
+  margin: 0;
   &__box {
-    background: #0d6efd;
+    background: #0068ff;
     color: #fff;
-    border-radius: 1.5rem;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    border-radius: 16px;
+    height: 160px;
+  }
+  .row {
+    margin: 0;
+  }
+  &__img {
+    position: absolute;
+    left: 260px;
+    height: 185px;
+  }
+  &__content {
+    width: 552px;
+  }
+  &__email-submit {
+    width: 340px;
+    padding: 0;
+    margin-left: 8rem;
   }
   &__title {
     font-size: 1.3rem;
     font-weight: 700;
   }
   &__desc {
-    font-size: 1rem;
+    font-size: 0.7rem;
   }
   &__form {
+    width: 340px;
+    position: relative;
     input { 
-      border-radius: 2rem 0 0 2rem; 
+      border-radius: 2rem;
+      padding-right: 3.5rem;
     }
-    button { 
-      border-radius: 0 2rem 2rem 0; 
+    button {
+      position: absolute;
+      right: 6px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+      padding: 0;
+      margin-right: 0.5rem;
+      background-color: #292929;
+      color: #fff;
     }
   }
 }

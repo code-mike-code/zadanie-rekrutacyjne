@@ -1,6 +1,41 @@
 @media (max-width: 767px) {
-  .newsletter__box { padding: 1rem; }
-  .newsletter__title { font-size: 1rem; }
-  .newsletter__desc { font-size: 0.9rem; }
-  .newsletter__form { flex-direction: column; gap: 0.5rem; }
+  .newsletter {
+  &__box {
+    padding: 2rem 1rem;
+    height: auto;
+    text-align: start;
+  }
+  &__img {
+    display: none;
+  }
+  &__content, &__email-submit, &__form {
+    width: 100%;
+    margin-left: 0;
+  }
+  &__title {
+    font-size: 1.2rem;
+  }
+  &__desc {
+    font-size: 0.7rem;
+  }
+  &__form {
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 1.2rem;
+    input {
+      padding-right: 0.75rem;
+    }
+    button {
+      position: absolute;
+      right: 6px;
+      top: 67%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      height: 32px;
+      width: 32px;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  }
 }
