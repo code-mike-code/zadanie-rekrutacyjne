@@ -322,77 +322,89 @@
 
     <footer class="footer bg-light pt-5 pb-3 mt-auto">
         <div class="container">
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <h4 class="footer__title">O nas</h4>
+            <div class="row d-flex flex-row justify-content-around">
+                <div class="col-md-2 mb-3">
+                    <h5 class="footer__title">O nas</h5>
                     <ul class="footer__list list-unstyled">
                         <li><a href="#">Poznaj nas</a></li>
                         <li><a href="#">Skontaktuj się z nami</a></li>
+                        <li><a href="#">Dołącz do nas</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <h4 class="footer__title">Informacje</h4>
+                <div class="col-md-2 mb-3">
+                    <h5 class="footer__title">Informacje</h5>
                     <ul class="footer__list list-unstyled">
                         <li><a href="#">Regulamin</a></li>
                         <li><a href="#">Polityka prywatności</a></li>
-                        <li><a href="#">Zasady zwrotów</a></li>
+                        <li><a href="#">Zasady gwarancji</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <h4 class="footer__title">Twoje konto</h4>
+                <div class="col-md-2 mb-3">
+                    <h5 class="footer__title">Twoje konto</h5>
                     <ul class="footer__list list-unstyled">
-                        <li><a href="#">Zaloguj się</a></li>
-                        <li><a href="#">Schowek</a></li>
-                        <li><a href="#">Koszyk</a></li>
+                        <li><a href="#">Twoje konto</a></li>
+                        <li><a href="#">Twoje zamówienie</a></li>
+                        <li><a href="#">Logowanie</a></li>
+                        <li><a href="#">Rejestracja</a></li>
                     </ul>
                 </div>
-                <div class="col-md-3 mb-3">
-                    <h4 class="footer__title">Obsługa klienta</h4>
+                <div class="col-md-2 mb-3">
+                    <h5 class="footer__title">Obsługa klienta</h5>
                     <ul class="footer__list list-unstyled">
                         <li><a href="#">Dostawa i płatność</a></li>
+                        <li><a href="#">Wymiana</a></li>
+                        <li><a href="#">Zwrot</a></li>
+                        <li><a href="#">Reklamacja</a></li>
                         <li><a href="#">FAQ</a></li>
                     </ul>
-                    <div class="footer__contact mt-3">
-                        <div><i class="fa fa-phone"></i> (+48) 000 000 000</div>
-                        <div><i class="fa fa-envelope"></i> sklep@kontakt.com.pl</div>
-                        <div>poniedziałek - piątek 10:00 - 16:00</div>
+                </div>
+                <div class="col-md-2 mb-3 footer__contact">
+                    <h5 class="footer__title">Skontaktuj sie z nami</h5>
+                    <div><i class="fa fa-phone"></i><a href="tel:+48000000000">(+48) 000 000 000</a></div>
+                    <div><i class="fa fa-envelope"></i><a href="mailto:sklep@kontakt.com.pl">sklep@kontakt.com.pl</a>
                     </div>
+                    <div>Jesteśmy do Twojej dyspozycji od poniedziałku do piątku w godzinach 8:00 - 16:00</div>
                 </div>
             </div>
             <div
                 class="footer__bottom d-flex flex-column flex-md-row justify-content-between align-items-center mt-4 pt-3 border-top">
-                <div class="footer__payments mb-2 mb-md-0">
+                <div class="footer__section footer__payments mb-2 mb-md-0 d-flex flex-column align-items-start">
                     <h3>Dostawa i płatność</h3>
-                    <img
-                        src="assets/img_inpost_kurier.png"
-                        alt="img_inpost_kurier"
-                        height="32"
-                    />
-                    <img
-                        src="assets/img_inpost_logotyp.png"
-                        alt="img_inpost_logo"
-                        height="32"
-                    />
-                    <img
-                        src="assets/img_blik_logo_1.png"
-                        alt="img_blik_logo"
-                        height="32"
-                    />
-                    <img
-                        src="assets/img_przelewy24_logo.png"
-                        alt="img_przelewy_24_logo"
-                        height="32"
-                    />
-                    <img
-                        src="assets/img_1024px_paypal_logo.png"
-                        alt="img_paypal_logo"
-                        height="32"
-                    />
+                    <div class="footer__payments-logos d-flex gap-3">
+                        <img
+                            src="assets/img_inpost_kurier.png"
+                            alt="img_inpost_kurier"
+                            height="32"
+                        />
+                        <img
+                            src="assets/img_inpost_logotyp.png"
+                            alt="img_inpost_logo"
+                            height="32"
+                        />
+                        <img
+                            src="assets/img_blik_logo_1.png"
+                            alt="img_blik_logo"
+                            height="32"
+                        />
+                        <img
+                            src="assets/img_przelewy24_logo.png"
+                            alt="img_przelewy_24_logo"
+                            height="32"
+                        />
+                        <img
+                            src="assets/img_1024px_paypal_logo.png"
+                            alt="img_paypal_logo"
+                            height="32"
+                        />
+                    </div>
                 </div>
-                <div class="footer__social d-flex gap-3">
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <div class="footer__section footer__social d-flex flex-column align-items-start gap-3">
+                    <h3>Social media</h3>
+                    <div class="footer__social-icons d-flex gap-3">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
