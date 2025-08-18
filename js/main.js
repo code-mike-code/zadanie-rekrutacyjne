@@ -151,6 +151,7 @@
       { name: 'Awangardowe półbuty na koturnie', price: '390,00zł', img: 'assets/product-2-slider.png', labels: [{type: 'new', text: 'NOWOŚĆ'}] },
       { name: 'Minimalistyczne botki białe', price: '410,00zł', img: 'assets/product-1-slider.png', labels: [{type: 'new', text: 'NOWOŚĆ'}] },
       { name: 'Skórzane kozaki w stylu retro', price: '620,00zł', img: 'assets/product-2-slider.png', labels: [{type: 'new', text: 'NOWOŚĆ'}] },
+      { name: 'Skórzane kozaki w stylu retro', price: '620,00zł', img: 'assets/product-1-slider.png', labels: [{type: 'new', text: 'NOWOŚĆ'}] },
     ],
     bestsellers: [
       { name: 'Bestsellerowe mokasyny', price: '350,10zł', img: 'assets/product-1-slider.png', labels: [{type: 'bestseller', text: 'BESTSELLER'}] },
@@ -188,10 +189,10 @@
   const productSliderSettings = {
     dots: true,
     arrows: true,
-    infinite: false,
+    infinite: true,
     speed: 500,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     appendArrows: $('.promotions__slider-wrapper'),
     prevArrow: '<button type="button" class="slick-prev"><i class="fa fa-chevron-left"></i></button>',
     nextArrow: '<button type="button" class="slick-next"><i class="fa fa-chevron-right"></i></button>',
@@ -200,14 +201,14 @@
         breakpoint: 1200,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
         }
       },
       {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToScroll: 1,
         }
       },
       {
