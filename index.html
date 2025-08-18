@@ -8,22 +8,15 @@
         content="width=device-width, initial-scale=1.0"
     >
     <title>Zadanie Rekrutacyjne</title>
-
+    <meta
+        name="description"
+        content="Twój sklep z butami online. Znajdź idealne buty skórzane na każdą okazję. Szybka wysyłka, darmowy zwrot. Zobacz bestsellery i aktualne promocje."
+    >
 
     <link
         rel="stylesheet"
         href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
     >
-    <!-- <link
-        rel="stylesheet"
-        type="text/css"
-        href="slick/slick.css"
-    />
-    <link
-        rel="stylesheet"
-        type="text/css"
-        href="slick/slick-theme.css"
-    /> -->
     <script
         src="https://kit.fontawesome.com/1611b70a0e.js"
         crossorigin="anonymous"
@@ -56,6 +49,12 @@
 </head>
 
 <body>
+    <a
+        href="#main-content"
+        class="skip-link visually-hidden-focusable"
+    >
+        Przejdź do głównej treści
+    </a>
 
     <header class="header">
         <div class="header__top py-1">
@@ -89,7 +88,7 @@
                         >
                             <img
                                 src="assets/img_logo.svg"
-                                alt="unlimitech logo"
+                                alt="Unlimitech - sklep z butami skórzanymi"
                             />
                         </a>
                     </div>
@@ -148,7 +147,12 @@
                         >Wyprzedaż</a>
                     </nav>
                     <form class="header__search d-none d-md-flex position-relative ms-3">
+                        <label
+                            for="header-search-input"
+                            class="visually-hidden"
+                        >Wyszukaj produkty</label>
                         <input
+                            id="header-search-input"
                             type="text"
                             class="form-control"
                             placeholder="Wyszukaj"
@@ -156,20 +160,24 @@
                         <button
                             type="submit"
                             class="btn p-0"
+                            aria-label="Szukaj produktów"
                         ><i class="fa-solid fa-search"></i></button>
                     </form>
                     <div class="header__actions d-flex align-items-center ms-0 gap-2">
                         <a
                             href="#"
                             class="header__icon"
+                            aria-label="Moje konto"
                         ><i class="fa fa-user"></i></a>
                         <a
                             href="#"
                             class="header__icon"
+                            aria-label="Lista życzeń"
                         ><i class="fa fa-heart"></i></a>
                         <a
                             href="#"
                             class="header__icon header__icon--cart position-relative"
+                            aria-label="Koszyk zakupowy"
                         >
                             <i class="fa fa-shopping-bag"></i>
                             <span class="header__icon-dot"></span>
@@ -177,6 +185,7 @@
                         <a
                             href="#"
                             class="header__icon header__icon--bars position-relative d-md-none"
+                            aria-label="Otwórz menu nawigacyjne"
                         >
                             <i class="fa-solid fa-bars"></i>
                         </a>
@@ -206,7 +215,12 @@
         <div class="header__searchbar d-md-none py-2">
             <div class="container">
                 <form class="header__searchbar-form d-flex align-items-center position-relative">
+                    <label
+                        for="mobile-search-input"
+                        class="visually-hidden"
+                    >Wyszukaj produkty</label>
                     <input
+                        id="mobile-search-input"
                         type="text"
                         class="form-control rounded-pill ps-4 pe-5"
                         placeholder="Wyszukaj"
@@ -215,6 +229,7 @@
                         type="submit"
                         class="btn position-absolute end-0 top-50 translate-middle-y me-2 p-0"
                         style="background:transparent; border:none;"
+                        aria-label="Szukaj produktów"
                     >
                         <i class="fa-solid fa-search"></i>
                     </button>
@@ -223,7 +238,11 @@
         </div>
     </header>
 
-    <main class="main">
+    <main
+        class="main"
+        id="main-content"
+    >
+        <h1 class="visually-hidden">Sklep z butami skórzanymi - najwyższa jakość butów damskich</h1>
         <section class="slider container my-4">
             <div class="slider__wrapper slick-slider">
                 <div class="slider__slide">
@@ -240,6 +259,7 @@
                         <a
                             href="#"
                             class="btn btn-light"
+                            aria-label="Zobacz więcej produktów z nowej kolekcji"
                         >Zobacz więcej</a>
                     </div>
                 </div>
@@ -256,6 +276,7 @@
                         <a
                             href="#"
                             class="btn btn-light"
+                            aria-label="Zobacz więcej produktów z kolekcji wiosennych trendów"
                         >Zobacz więcej</a>
                     </div>
                 </div>
@@ -293,6 +314,7 @@
                 <a
                     href="#"
                     class="promotions__all d-none d-md-block"
+                    aria-label="Zobacz wszystkie promocyjne produkty"
                 >Zobacz wszystkie</a>
             </div>
 
@@ -300,8 +322,6 @@
                 <div class="promotions__slider"></div>
             </div>
         </section>
-
-
 
         <section class="newsletter container mb-5">
             <div class="newsletter__box p-4 text-white">
@@ -319,17 +339,30 @@
                     </div>
                     <div class="newsletter__email-submit col-md-4">
                         <form class="newsletter__form d-flex">
+                            <label
+                                for="newsletter-email"
+                                class="visually-hidden"
+                            >Adres email do newslettera</label>
                             <input
+                                id="newsletter-email"
                                 type="email"
                                 class="form-control me-2"
                                 placeholder="Twój adres email"
                                 required
+                                aria-describedby="newsletter-help"
                             />
                             <button
                                 type="submit"
                                 class="btn btn-light"
+                                aria-label="Zapisz się do newslettera"
                             ><i class="fa fa-arrow-right"></i></button>
                         </form>
+                        <div
+                            id="newsletter-help"
+                            class="visually-hidden"
+                        >
+                            Podaj swój adres email, aby otrzymywać informacje o promocjach
+                        </div>
                         <div class="form-check mt-2">
                             <input
                                 class="form-check-input"
@@ -455,7 +488,10 @@
     >
         <div class="cart-preview__header d-flex justify-content-between align-items-center p-3 border-bottom">
             <h3 class="cart-preview__title mb-0">Koszyk <span class="cart-preview__count">(2 sztuki)</span></h3>
-            <button class="cart-preview__close btn btn-link p-0"><i class="fa fa-times fa-lg"></i></button>
+            <button
+                class="cart-preview__close btn btn-link p-0"
+                aria-label="Zamknij koszyk"
+            ><i class="fa fa-times fa-lg"></i></button>
         </div>
         <div class="cart-preview__body p-3">
             <div class="cart-preview__item d-flex align-items-center mb-3">
@@ -468,8 +504,10 @@
                     <div class="cart-preview__name">Półbuty mokasyny na grubej podeszwie</div>
                     <div class="cart-preview__details">1 szt. x 129,99 zł</div>
                 </div>
-                <button class="cart-preview__remove btn btn-link text-danger p-0 ms-2"><i
-                        class="fa fa-trash"></i></button>
+                <button
+                    class="cart-preview__remove btn btn-link text-danger p-0 ms-2"
+                    aria-label="Usuń produkt z koszyka"
+                ><i class="fa fa-trash"></i></button>
             </div>
             <div class="cart-preview__item d-flex align-items-center mb-3">
                 <img
