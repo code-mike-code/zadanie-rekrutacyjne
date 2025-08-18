@@ -58,7 +58,7 @@
 <body>
 
     <header class="header">
-        <div class="header__top bg-primary text-white py-1">
+        <div class="header__top py-1">
             <div class="container d-flex justify-content-center align-items-center">
                 <div class="header__links d-flex align-items-center justify-content-center">
                     <div class="header__contact">
@@ -261,6 +261,7 @@
                 </div>
             </div>
         </section>
+
         <section class="categories container mb-5">
             <div class="row g-3">
                 <div
@@ -269,37 +270,39 @@
                 ></div>
             </div>
         </section>
+
         <section class="promotions container mb-5">
             <div class="d-flex justify-content-between align-items-center mb-3">
-                <h2 class="promotions__title mb-0">
-                    <span class="text-primary">Promocje</span> | Nowości | Bestsellery
-                </h2>
+                <div class="promotions__tabs d-flex align-items-center">
+                    <a
+                        href="#"
+                        data-filter="promotions"
+                        class="promotions__tab active"
+                    >Promocje</a>
+                    <a
+                        href="#"
+                        data-filter="news"
+                        class="promotions__tab"
+                    >Nowości</a>
+                    <a
+                        href="#"
+                        data-filter="bestsellers"
+                        class="promotions__tab"
+                    >Bestsellery</a>
+                </div>
                 <a
                     href="#"
-                    class="promotions__all"
+                    class="promotions__all d-none d-md-block"
                 >Zobacz wszystkie</a>
             </div>
-            <div class="row g-3 promotions__list">
-                <div class="col-6 col-md-3">
-                    <div class="product-card">
-                        <div class="product-card__labels">
-                            <span class="product-card__label product-card__label--bestseller">BESTSELLER</span>
-                            <span class="product-card__label product-card__label--new">NOWOŚĆ</span>
-                        </div>
-                        <img
-                            src="https://images.pexels.com/photos/532220/pexels-photo-532220.jpeg?auto=compress&w=400&h=400"
-                            alt="Półbuty mokasyny"
-                            class="img-fluid"
-                            loading="lazy"
-                        />
-                        <div class="product-card__body">
-                            <h3 class="product-card__name">Półbuty mokasyny na grubej podeszwie</h3>
-                            <div class="product-card__price">350,10zł</div>
-                        </div>
-                    </div>
-                </div>
+
+            <div class="promotions__slider-wrapper position-relative">
+                <div class="promotions__slider"></div>
             </div>
         </section>
+
+
+
         <section class="newsletter container mb-5">
             <div class="newsletter__box p-4 text-white">
                 <div class="row justify-content-center align-items-center">
