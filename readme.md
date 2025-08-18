@@ -6,7 +6,9 @@ This project is a fully responsive landing page for an e-commerce shoe store, cr
 
 The project is built upon the **Bootstrap 5** framework to ensure a solid, responsive grid and ready-to-use components. It also utilizes the **Slick Carousel** library for implementing interactive sliders. The combination of these tools allowed for the rapid development of a functional and aesthetically pleasing design.
 
-See the live version of [Ladies Shoe Store](https://code-mike-code.github.io/zadanie-rekrutacyjne/).
+See the GitHub Pages live version of [Ladies Shoe Store](https://code-mike-code.github.io/zadanie-rekrutacyjne/).
+See the Vercel live version of [Ladies Shoe Store](https://zadanie-rekrutacyjne-lake.vercel.app/).
+
 
 **Main features**:
 - HTML5
